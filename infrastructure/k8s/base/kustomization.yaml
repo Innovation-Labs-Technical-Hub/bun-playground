@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - namespace.yaml
+  - ../platform/redis
+  - ../platform/kafka
+  - ../platform/otel-collector
+  - ../platform/loki
+  - ../platform/tempo
+  - ../platform/grafana
+  - ../services/api-gateway
+  - ../services/user-service

@@ -10,6 +10,21 @@
     },
     "start": {
       "dependsOn": ["build"]
+    },
+    "test": {
+      "cache": false
+    },
+    "lint": {
+      "cache": false
+    },
+    "db:generate": {
+      "cache": false
+    },
+    "db:migrate": {
+      "cache": false
+    },
+    "db:push": {
+      "cache": false
     }
   }
 }

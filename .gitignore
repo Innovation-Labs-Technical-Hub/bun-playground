@@ -21,6 +21,8 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 .env.test.local
 .env.production.local
 .env.local
+!*.env.example
+!.env.example
 
 # turbo
 .turbo
@@ -35,3 +37,13 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# SQLite databases
+*.db
+*.sqlite
+
+# Prisma
+**/prisma/migrations/**/migration_lock.toml
+
+# Docker volumes (local data)
+infrastructure/docker/*-data/
