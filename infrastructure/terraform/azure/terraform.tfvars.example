@@ -1,0 +1,25 @@
+# Azure Terraform Variables
+# Copy this file to terraform.tfvars and fill in the values.
+# NEVER commit terraform.tfvars to version control.
+
+project_name   = "bun-microservices"
+environment    = "dev"
+azure_location = "eastus"
+
+# Database
+db_username = "dbadmin"
+db_password = "CHANGE_ME_use_a_strong_password"
+
+# Container
+container_registry = "myacr.azurecr.io"
+image_tag          = "latest"
+service_cpu        = 0.5
+service_memory     = "1Gi"
+
+# Sizing (adjust per environment)
+# db_sku            = "GP_Standard_D2s_v3"   # dev/staging
+# db_sku            = "GP_Standard_D4s_v3"   # prod
+# redis_capacity    = 1                       # dev/staging
+# redis_capacity    = 2                       # prod
+# eventhub_capacity = 1                       # dev/staging
+# eventhub_capacity = 4                       # prod

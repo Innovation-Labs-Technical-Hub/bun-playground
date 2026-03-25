@@ -5,6 +5,10 @@
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "scripts": {
+    "test": "bun test",
+    "lint": "eslint src/"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   }

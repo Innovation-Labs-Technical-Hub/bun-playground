@@ -1,4 +1,4 @@
-.PHONY: help install dev build test clean \
+.PHONY: help install dev build test lint clean \
        docker-up docker-down docker-logs docker-ps docker-build \
        k8s-dev k8s-prod k8s-delete \
        db-generate db-migrate db-push db-studio
@@ -26,6 +26,9 @@ build: ## Build all packages
 
 test: ## Run all tests
 	bun test --recursive
+
+lint: ## Run ESLint across all workspaces
+	bun run lint
 
 clean: ## Remove dist, node_modules, docker volumes, sqlite dbs
 	rm -rf node_modules apps/*/node_modules libs/*/node_modules services/*/node_modules

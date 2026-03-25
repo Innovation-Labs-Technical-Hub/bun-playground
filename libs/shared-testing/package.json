@@ -1,17 +1,12 @@
 {
-  "name": "@bun-playground/shared-utils",
+  "name": "@bun-playground/shared-testing",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
-  "scripts": {
-    "test": "bun test",
-    "lint": "eslint src/"
-  },
   "dependencies": {
-    "@bun-playground/shared-types": "workspace:*",
-    "kafkajs": "^2.2.4"
+    "@bun-playground/shared-types": "workspace:*"
   },
   "devDependencies": {
     "@types/bun": "latest"

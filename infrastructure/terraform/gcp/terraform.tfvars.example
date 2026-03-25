@@ -1,0 +1,24 @@
+# GCP Terraform Variables
+# Copy this file to terraform.tfvars and fill in the values.
+# NEVER commit terraform.tfvars to version control.
+
+project_name   = "bun-microservices"
+environment    = "dev"
+gcp_project_id = "your-gcp-project-id"
+gcp_region     = "us-central1"
+
+# Database
+db_username = "dbadmin"
+db_password = "CHANGE_ME_use_a_strong_password"
+
+# Container
+container_registry = "gcr.io/your-gcp-project-id"
+image_tag          = "latest"
+service_cpu        = "1"
+service_memory     = "512Mi"
+
+# Sizing (adjust per environment)
+# db_tier        = "db-custom-2-4096"   # dev/staging
+# db_tier        = "db-custom-4-8192"   # prod
+# redis_memory_gb = 1                   # dev/staging
+# redis_memory_gb = 4                   # prod
